@@ -128,7 +128,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Priv-app permissions whitelist
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.control_privapp_permissions=enforce
+    ro.control_privapp_permissions=disable
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -159,6 +159,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.mux_count=8 \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
+
+# RR Fix
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
 
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
