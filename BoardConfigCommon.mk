@@ -191,7 +191,7 @@ VENDOR_SECURITY_PATCH := 2018-10-01
 include device/qcom/sepolicy/sepolicy.mk
 
 # Ingnore for now
-SELINUX_IGNORE_NEVERALLOWS := true
+#SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
