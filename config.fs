@@ -79,6 +79,12 @@ user:  AID_GPS
 group: AID_GPS
 caps: NET_BIND_SERVICE BLOCK_SUSPEND
 
+[vendor/bin/sensors.qti]
+mode: 0755
+user: AID_SYSTEM
+group: AID_SYSTEM
+caps: NET_BIND_SERVICE
+
 [firmware/]
 mode: 0771
 user: AID_SYSTEM
@@ -93,7 +99,7 @@ caps: 0
 
 [vendor/firmware_mnt/image/*]
 mode: 0771
-user: AID_ROOT
+user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0
 
